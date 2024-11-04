@@ -1,18 +1,93 @@
-body{
-    background-color: orange;
+body .adaptive{
+    background-color: white;
+    color:black;
 }
+/*
 li .hz{
     display: inline;
-}
+}*/
 nav{
-    background-color: royalblue;
-    text-align: center;
-    margin-bottom: 1%;
-    color: white;
+    background-color:lightblue;
+    /* color: white; */
+    
     border-radius: 15px;
-    padding: 0.5%;
-    font-size: xx-large;
+    border-color: black;
+    margin-bottom: 2%;
+}
+.navbar-brand{
+    margin-left:2%;
 }
 a{
-    text-decoration: none;
+    /* text-decoration: none; */
+    color:black;
 }
+/**/
+
+.card
+{
+    margin-bottom:2%;
+}
+/*
+.nav-link
+{
+    color:white;
+}
+    */
+#searchBar{
+    margin-right:2%;
+} 
+#searchButton{
+    margin-left:2%;
+}
+/*
+.searchForm{
+    
+} */
+ form{ 
+    align-self:auto;
+    
+    display: flex;
+    max-height: 100px;
+ }
+ .navbar-image
+ {
+    width:50px;
+    height: 50px;
+    margin-left:5px;
+ }
+ @media (prefers-color-scheme: dark) 
+ { 
+    body.adaptive{
+        color:white;
+        background-color: black;
+    }
+    /* .card.adaptive
+    {
+        data-mdb-theme: dark;
+
+    } */
+    .card.adaptive
+    {
+        background-color: black;
+        border-color:white;
+    }
+    .card-header
+    {
+        color:white;
+        border-color:white;
+        background-color: rgba(222,218,214,0.3);
+    }
+    a
+    {
+        color:white;
+    }
+    li::marker{
+        color:white;
+    }
+    li{
+        color:white;
+    }
+  }
+  .align-right{
+    align-self:right;
+  }

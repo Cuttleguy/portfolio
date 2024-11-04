@@ -10,71 +10,139 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<body>
-   
+<body class="adaptive">
+
     <div class="container">
-        <nav>
-            <b>Portfolio of Max Gerhardt</b>
-        </nav>
-        <div class="card">
+        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+          
+            <img src="person-removebg-preview.png" class="navbar-image" alt="">
+            <a href="https://github.com/Cuttleguy"><img src="github-removebg-preview.png" class="navbar-image" alt=""></a>
+
+            <a class="navbar-brand" href="#">Portfolio of Cuttleguy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li> -->
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+              </ul>
+              <form class="form-inline my-2 my-lg-0 align-right" id="search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Type Here" aria-label="Search" id = "search-bar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                <!-- <button class="btn btn-outline-light my-2 my-sm-0" onclick="invertColors()">Swich Color</button> -->
+            </form>
+            </div>
+          </nav>
+        <div class="card adaptive">
+          <div class="card-header"><a href="index.html#cs"><u>Underlined Means Link!</u></a></div>
+        </div>
+        <div class="card adaptive" id="cs">
             <div class="card-header">
-                Computer Science
+                <span>CS Projects</span>
             </div>
             <div class="card-body">
-                <ul>
-                    <li>Talented in the languages of(Mainly self taught): 
+                <span id="csbody">
+                    <ul>
+                        <li id="solver" class="searchable">
+                           <a href="https://github.com/Cuttleguy/JavaSolver">Java Equation Solver</a> 
+                           <ul>
+                            <li>Solves one variable equations(without radicals or exponentials)</li>
+                           </ul>
+                        </li>
+                        <li id = "bot" class="searchable">
+                            <a href="https://github.com/Cuttleguy/NeuralNetwork1">Chess Bot</a>
+                            <ul>
+                              <li>Trained using a neural network(in python)</li>
+                            </ul>
+                        </li>
+                        <li id = "paint" class="searchable">
+                          <a href="https://cuttleguy.github.io/GoMaxPaint">Paint Program</a>
+                          <ul>
+                            <li>With multiple brush sizes, colors, custom colors, paint bucket, eraser, and transparency</li>
+
+                          </ul>
+                        </li>
+                        <li id = "factor" class="searchable"><a href="https://github.com/Cuttleguy/Factorizing">Factor Finder</a>
                         <ul>
-                            <li>Python</li>
-                            <li>PHP</li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>JS</li>
-                            <li>Java</li>
-                            <li>GML</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
+                          <li>Prime Factorizes and finds factors of numbers</li>
+                        </ul></li>
+                    
+                    </ul>
+                </span>
+                
+            </div>
+        </div>
+        <div class="card adaptive" id = "writings">
+            <div class="card-header"><span>Writings</span></div>
+            <div class="card-body">
+                <ul>
+                    <li id="eg" class="searchable">
+                        <a href="https://www.engineergirl.org/153968/The-Story-of-the-Bottle">5th in national competition</a>
+                        <ul>
+                          <li>An essay on the production of stainless steel water bottles</li>
                         </ul>
                     </li>
-                    <li>
-                        Has made a project that solves inputted equations<b> Java</b>.
-                    </li>
-                    <li>
-                        Has created a chess bot(It wasn't very good)<b> Python</b>
-                    </li>
-                    <li>
-                        Has made a 3d game in Game Maker(A 2d game software)<b> GML</b>
+                    <li id="smell" class="searchable">
+                        <a href="https://docs.google.com/document/d/1JUWt5njqTAwa6BVpksy2t02dKXu6V8gAXsyFASYIMak">Essay On Digital Olfaction Implications and Studies</a>
+                        <ul>
+                          <li>An essay on the digitizaiton of the chemical senses(specifically olfaction) and their implications</li>
+
+                        </ul>
                     </li>
                 </ul>
-                
-            </div>
-            
-        </div>
-        <br>
-        <div class="card">
-            <div class="card-header">
-                Science
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li>Came in the top 18 in 5th grade national Science Bee(Semifinals) and Quarterfinals of 6th grade national Science Bee</li>
-                    <li>Is interested in Quantum Physics, Relativity, Cell Biology, and many other regions of science</li>
-                </ul>
-                
             </div>
         </div>
-        <br>
-        <div class="card">
-            <div class="card-header">
-                English
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li>Came in 5th in a <a href="https://www.engineergirl.org/153910/2024-Contest-Winners">natinal middle school writing competion</a></li>
-                    <li>Has ideas for books to write that they have drafted</li>
-                </ul>
-            </div>
+        <div class="card adaptive" id="aboutme">
+          <div class="card-header">About Me</div>
+          <div class="card-body">
+            <ul>
+              <li class="searchable">I know and am mostly self taught in the following languages: <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>Web Dev Trio <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul></li>
+                
+                                
+                <li>GML</li>
+
+              </ul></li>
+              <li class="searchable">I am taking Algebra 2 in 7th Grade</li>
+              <li class="searchable">I made it to natinal quarterfinals in Science Bee in 2024</li>
+              <li class="searchable">I made it to natinal semifinals in Science Bee in 2023</li>
+
+            </ul>
+          </div>
         </div>
     </div>
+    <script src ="script.js"></script>    
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 </html>
